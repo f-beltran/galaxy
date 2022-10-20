@@ -1,0 +1,33 @@
+{
+  "datos": {
+    "pendientes": [
+      {
+        "id": 1,
+        "idUsuario": 1,
+        "titulo": "Titulo1 ",
+        "contenido": "Contenido 1",
+        "realizado": 0,
+        "fecha": "2022-10-20T15:57:53.013"
+      },
+      {
+        "id": 2,
+        "idUsuario": 1,
+        "titulo": "Titulo2",
+        "contenido": "Conteniod 2",
+        "realizado": 0,
+        "fecha": "2022-10-20T16:00:05.487"
+      }
+    ],
+    "hechos": [
+      {
+        "id": 3,
+        "idUsuario": 1,
+        "titulo": "Titulo 3",
+        "contenido": "Contenido 3",
+        "realizado": 1,
+        "fecha": "2022-10-20T16:00:22.957"
+      }
+    ]
+  },
+  "mensajes": null
+}

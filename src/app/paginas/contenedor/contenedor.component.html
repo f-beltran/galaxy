@@ -1,0 +1,19 @@
+<mat-toolbar >
+  <span>ORGANIZADOR DE TAREAS</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" routerLink="listaDeTareas">
+    <mat-icon>view_list</mat-icon>
+  </button>
+  Lista de tareas
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="crearTarea">
+    <mat-icon>edit</mat-icon>
+  </button>
+  Nueva tarea
+
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="crearTarea" (click)="cerrarSesion()">
+    <mat-icon>logout</mat-icon>
+  </button>
+  Cerrar sesión
+
+</mat-toolbar>
+<router-outlet></router-outlet>
