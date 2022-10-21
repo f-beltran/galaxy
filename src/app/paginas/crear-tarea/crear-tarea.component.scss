@@ -9,3 +9,34 @@
 mat-form-field{
   width: 100%;
 }
+$warning-color: #ff8f00;
+$info-color: #1565c0;
+$success-color: #2e7d32;
+$neutro-color: #fff;
+$error-color: #c62828;
+$snackbar-padding: 20px;
+
+.warning-snackbar {
+  padding: $snackbar-padding !important;
+  background-color: $neutro-color!important;
+  color: $warning-color!important;
+}
+.mat-snack-bar-container.success-snackbar {
+  padding: $snackbar-padding !important;
+  background-color: $neutro-color!important;
+  color: $success-color!important;
+}
+.info-snackbar {
+  padding: $snackbar-padding !important;
+  background-color: $neutro-color!important;
+  color: $info-color!important;
+}
+.neutro-snackbar {
+  background-color: $neutro-color!important;
+}
+.warning-snackbar button,
+.success-snackbar button,
+.info-snackbar button,
+.neutro-snackbar button {
+  font-weight: bold!important;
+}

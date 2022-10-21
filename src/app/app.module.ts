@@ -18,6 +18,7 @@ import { CrearTareaComponent } from './paginas/crear-tarea/crear-tarea.component
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import { ContenedorComponent } from './paginas/contenedor/contenedor.component';
+import {MatSnackBarModule} from "@angular/material/snack-bar";
 
 
 
@@ -41,7 +42,8 @@ import { ContenedorComponent } from './paginas/contenedor/contenedor.component';
     HttpClientModule,
     DragDropModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("/assets/img.png");
 }
 //div{
 //  background-color: red;
@@ -11,4 +12,8 @@
 
 mat-form-field{
   width: 100%;
+}
+
+mat-card{
+  opacity: 0.9!important;
 }
