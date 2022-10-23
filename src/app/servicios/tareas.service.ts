@@ -34,4 +34,7 @@ export class TareasService {
   eliminarTarea(payload: any){
     return this.http.post<RespuestaSesion>('https://backend.cba.ucb.edu.bo/BETareas/Tareas/Eliminar', payload)
   }
+  test(){
+
+  }
 }
