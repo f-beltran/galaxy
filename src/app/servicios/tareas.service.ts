@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {ListaTareas, RespuestaSesion} from "../modelo/respuesta-sesion";
-import {Observable} from "rxjs";
+import {catchError, map, Observable, of, tap} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -33,5 +33,20 @@ export class TareasService {
   }
   eliminarTarea(payload: any){
     return this.http.post<RespuestaSesion>('https://backend.cba.ucb.edu.bo/BETareas/Tareas/Eliminar', payload)
+  }
+  verificarToken(): Observable<any>{
+    return this.http.post('https://backendapirichardcanoa.azurewebsites.net/Usuario/ValidToken', {}).pipe(
+      tap( x => console.log('devolviendo desde el guard',x)),
+      map( x => true),
+
+      catchError(this.manejarError)
+    )
+    // return of(false)
+  }
+
+  private manejarError(
+    error: HttpErrorResponse
+  ): Observable<boolean> {
+    return of(false)
   }
 }
