@@ -7,7 +7,9 @@ import { ContenedorComponent } from "./paginas/contenedor/contenedor.component";
 
 const routes: Routes = [
   { path: 'iniciarSesion', component: IniciarSesionComponent },
+  { path: '', redirectTo: 'iniciarSesion', pathMatch: "full"},
   { path: '', component: ContenedorComponent, children: [
+
       { path: 'listaDeTareas', component: ListaDeTareasComponent },
       { path: 'crearTarea', component: CrearTareaComponent },
   ] },
